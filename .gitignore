@@ -1,0 +1,17 @@
+# Environnement Python
+.venv/
+__pycache__/
+*.pyc
+
+# Identifiants — ne jamais committer
+.env
+
+# Données générées localement (volumineuses, régénérées chaque jour)
+data/snapshots/*.csv
+data/log.txt
+
+# Cartes HTML générées (régénérables à la demande)
+carte_*.html
+
+# Fichiers système macOS
+.DS_Store

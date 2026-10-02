@@ -1,0 +1,7 @@
+mysql-connector-python
+requests
+python-dotenv
+folium
+branca
+streamlit
+pandas
