@@ -45,6 +45,9 @@ else:
         historique,
         columns=["jour", "moyenne", "veille", "variation"]
     )
+    
+    df_tendance["veille"] = pd.to_numeric(df_tendance["veille"], errors="coerce")
+    df_tendance["variation"] = pd.to_numeric(df_tendance["variation"], errors="coerce")
 
     if len(df_tendance) < 2:
         st.info("Pas encore assez de données pour tracer une courbe (minimum 2 jours).")
